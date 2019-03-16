@@ -18,6 +18,8 @@
     "babel-polyfill": "^6.26.0",
     "global": "^4.3.2",
     "google-map-react": "^1.1.2",
+    "moment": "^2.24.0",
+    "plotly.js": "^1.45.2",
     "react-plotly.js": "^2.3.0",
     "react-redux": "^6.0.1",
     "redux": "^4.0.1",

@@ -5,6 +5,7 @@ import { connect } from "react-redux"
 import { initDis } from "../actions/actions"
 
 import Map from "./map"
+import Graph from "./graph"
 
 class App extends React.Component {
     componentDidMount() {
@@ -18,7 +19,10 @@ class App extends React.Component {
         return (
             <div>
                 {data ?
-                    <Map lat={data[data.length - 1].latitude} lng={data[data.length - 1].longitude}/> :
+                    <div>
+                        <Map lat={data[data.length - 1].latitude} lng={data[data.length - 1].longitude}/>
+                        <Graph data={data}/>
+                    </div>:
                     <h1>Loading...</h1>
                 }
             </div>
