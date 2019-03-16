@@ -2,6 +2,8 @@ import React from "react"
 import Plot from "react-plotly.js"
 import moment from "moment"
 
+import "../client/styles/graph.scss"
+
 export default class Graph extends React.Component {
     constructor(props) {
         super(props)
@@ -36,7 +38,7 @@ export default class Graph extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="graphStyle">
                 <Plot
                     data={[
                         {

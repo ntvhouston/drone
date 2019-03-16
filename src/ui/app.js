@@ -4,6 +4,8 @@ import { connect } from "react-redux"
 
 import { initDis } from "../actions/actions"
 
+import Header from "./header"
+import Heading from "./heading"
 import Map from "./map"
 import Graph from "./graph"
 
@@ -17,11 +19,22 @@ class App extends React.Component {
     render() {
         const { data } = this.props
         return (
-            <div>
+            <div className = "container">
+                <Header/>
                 {data ?
-                    <div>
-                        <Map lat={data[data.length - 1].latitude} lng={data[data.length - 1].longitude}/>
-                        <Graph data={data}/>
+                    <div className = "row">
+                        <div className = "col">
+                            <Heading title="Map Visualization"/>
+                            <div className = "shadow p-3 mb-5 bg-white rounded">
+                                <Map lat={data[data.length - 1].latitude} lng={data[data.length - 1].longitude}/>
+                            </div>
+                        </div>
+                        <div className = "col">
+                            <Heading title="Graph Visualization"/>
+                            <div className="shadow p-3 mb-5 bg-white rounded">
+                                <Graph data={data}/>
+                            </div>
+                        </div>
                     </div>:
                     <h1>Loading...</h1>
                 }

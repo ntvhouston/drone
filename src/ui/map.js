@@ -2,12 +2,13 @@ import React from "react"
 import GoogleMapReact from "google-map-react"
 
 import { Marker } from "./marker"
+import "../client/styles/map.scss"
 
 export default class Map extends React.Component {
     render() {
         const location = {lat: this.props.lat, lng: this.props.lng}
         return (
-            <div style={{ height: '90vh', width: '50%' }}>
+            <div className="map">
                 <GoogleMapReact
                     bootstrapURLKeys={{key: "AIzaSyDiojmHwUTYpFu-n_UZ5YXi5WaZWSKDEeQ"}}
                     defaultCenter={{
