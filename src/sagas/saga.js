@@ -6,7 +6,7 @@ import { fetchData } from "../api/api"
 
 function* getData(action) {
     const data = yield call(fetchData)
-    yield put(dis(data.data))
+    yield put(dis(data))
 }
 
 export function* watcherSaga() {
