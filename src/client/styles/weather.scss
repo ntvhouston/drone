@@ -1,0 +1,17 @@
+$font-fam: Helvetica, Arial, sans-serif;
+$font-col: #6b6b6b;
+
+.weatherFontBasic {
+    font-family: $font-fam;
+    color: $font-col;
+}
+
+.locationTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.locationSubtitle {
+    font-size: 12px;
+    margin-top: -1.3rem;
+}
