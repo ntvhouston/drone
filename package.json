@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Jaskaran Singh",
   "license": "MIT",
+  "engines": {
+    "node": "11.7.0"
+  },
   "scripts": {
     "dev-server": "webpack-dev-server",
     "build": "webpack"
