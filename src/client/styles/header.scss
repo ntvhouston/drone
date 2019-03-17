@@ -3,5 +3,11 @@
 }
 
 .headerBrand {
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    filter: brightness(0) invert(1) drop-shadow(0 1mm 1mm rgb(0, 0, 0));
 }
