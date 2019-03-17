@@ -3,6 +3,7 @@ import Plot from "react-plotly.js"
 import moment from "moment"
 
 import "../client/styles/graph.scss"
+import { height } from "window-size";
 
 export default class Graph extends React.Component {
     constructor(props) {
@@ -31,7 +32,7 @@ export default class Graph extends React.Component {
     }
 
     componentDidUpdate(prevProps) {
-        if(this.props.data[0].timestamp !== prevProps.data[0].timestamp) {
+        if(this.props.data[this.props.data.length - 1].timestamp !== prevProps.data[prevProps.data.length - 1].timestamp) {
             this.pullData()
         }
     }
@@ -39,7 +40,7 @@ export default class Graph extends React.Component {
     render() {
         return (
             <div className="graphStyle">
-                <Plot
+                <Plot className="graphStyle"
                     data={[
                         {
                             x: this.state.time,
@@ -47,6 +48,13 @@ export default class Graph extends React.Component {
                             type: 'scatter'
                         }
                     ]}
+                    layout={ {
+                        autozie: true,
+                        title: 'Drone Temperature',
+                        yaxis: {
+                            automargin: true
+                        }
+                    } }
                 />
             </div>
         )

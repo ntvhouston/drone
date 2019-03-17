@@ -7,7 +7,7 @@ const Header = (props) => {
         <nav className="navbar navbar-dark bg-dark">
             <a className="navbar-brand" href="#">
                 <img src="marker.png" width="30" height="30" className="d-inline-block align-top"/>
-                Dro
+                Data Visualization
             </a>
         </nav>
     )
