@@ -6,7 +6,6 @@ import { BarLoader } from "react-spinners"
 import { css } from "@emotion/core"
 
 import { initDis } from "../actions/actions"
-import "react-toastify/dist/ReactToastify.css"
 
 import Header from "./header"
 import Component from "./components"

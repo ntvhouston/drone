@@ -2,8 +2,6 @@ import React from "react"
 import Plot from "react-plotly.js"
 import moment from "moment"
 
-import "../client/styles/graph.scss"
-
 export default class Graph extends React.Component {
     constructor(props) {
         super(props)

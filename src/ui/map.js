@@ -2,7 +2,6 @@ import React from "react"
 import GoogleMapReact from "google-map-react"
 
 import { Marker } from "./marker"
-import "../client/styles/map.scss"
 
 export default class Map extends React.Component {
     render() {

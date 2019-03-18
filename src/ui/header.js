@@ -1,7 +1,5 @@
 import React from "react"
 
-import "../client/styles/header.scss"
-
 const Header = (props) => {
     return (
         <nav className="navbar navbar-dark bg-dark">

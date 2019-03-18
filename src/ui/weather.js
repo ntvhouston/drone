@@ -4,8 +4,6 @@ import RenderWeather from "./renderWeather"
 import RenderLocation from "./renderLocation"
 import RenderStateData from "./renderState"
 
-import "../client/styles/weather.scss"
-
 const Weather = (props) => {
     return (
         <div className="shadow p-3 mb-5 bg-white">
