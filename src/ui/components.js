@@ -19,7 +19,7 @@ const Component = (props) => {
                         <Map lat={data[data.length - 1].latitude} lng={data[data.length - 1].longitude}/>
                     </div>
                 </div>
-                <div className="col-sm">
+                <div className="col">
                     <Heading title="Graph Visualization"/>
                     <div className="shadow p-3 mb-5 bg-white rounded">
                         <Graph data={data}/>
