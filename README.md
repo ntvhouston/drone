@@ -5,6 +5,14 @@
 ## Live URL (I thought you guys won't have time to run it so I deployed it!!! :sunglasses:):
 #### https://eog.armediadesign.com
 
+## Instructions to run it
+```
+// hoping that you have cloned or downloaded this repo and inside the folder of this repo.
+npm install
+npm install yarn // just to make sure yarn is installed
+yarn run build:prod
+node server/server.js // you can then access it on localhost:3000
+```
 
 ## Little Detail:
 #### This application makes 3 get requests every 4 seconds to the api using redux and middleware redux saga. And the requests are as follow:
