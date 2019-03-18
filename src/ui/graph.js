@@ -29,7 +29,7 @@ export default class Graph extends React.Component {
     render() {
         return (
             <div className="graphStyle">
-                <Plot className="graphStyle"
+                <Plot style={width=100 + "%"} className="graphStyle"
                     data={[ {
                             x: this.state.time,
                             y: this.state.temp,
